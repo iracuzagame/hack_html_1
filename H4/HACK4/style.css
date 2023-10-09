@@ -4,3 +4,142 @@
     box-sizing: border-box;
 }
 
+body{
+    --color--sale: #B88940;
+    --franjas: #FFBD59;
+    --catamaran:'Catamaran', sans-serif;
+    --open_sans:'Open Sans', sans-serif;
+    --ruda: 'Ruda', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 3em;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+
+}
+
+section::before{
+    content: "";
+    background: black;
+    width: 50px;
+    height: 5px;
+    border-radius: 20px;
+    margin-bottom: 0.5em;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+section > span {
+    font-size: 1rem;
+    font-family: var(--ruda);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+h1{
+    font-family: var(--ruda);
+    text-transform: uppercase;
+    color: var(--color--sale);
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+}
+
+section > p{
+    font-family: var(--ruda);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+section > span{
+    font-family: var(--catamaran);
+
+}
+/*-------------------------*/
+section{
+    height: 100%;
+    width: 90%;
+    position: relative;
+}
+
+.franja{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.franja > *{
+    height: 1em;
+    width: 200%;
+    background: var(--franjas);
+    
+}
+
+.ima{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--catamaran);
+    gap: 1em;
+}
+
+figure:first-child:after{
+    content: "lorem . $200";
+
+}
+
+figure:nth-of-type(2)::after{
+    content: "lorem . $300";
+
+}
+
+figure:last-child::after{
+    content: "lorem . $400";
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+h2{
+    font-family: var(--open_sans);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--color--sale);
+}
+
+img{
+    height: 50%;
+    width: 90%;
+    margin-top: 60px;
+}
