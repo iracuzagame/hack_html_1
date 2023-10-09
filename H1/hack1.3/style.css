@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #93b5c9;
+    height: 200px;
+}
+
+nav{
+    background-color: #AB2849;
+    height: 350px;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+section{
+    background-color: #AB2849;
+    height: 175px;
+    width: 70%;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #AB2849;
+    height: 150px;
+    margin-top: 20px;
+}
