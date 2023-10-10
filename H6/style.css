@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --letra1: 'Khula', sans-serif;
+    --letra2: 'Montserrat', sans-serif;
+    --colorcaja:#004AAD;
+    --color_menu:#290059;
+    --blanco: white;
+    --precio: #1E0042;
+}
+
+.contenido{
+    background-color: var(--color_menu);
+    width: auto;
+    height: 100vh;
+}
+
+.titulo{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: var(--blanco);
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 300px;
+    color: var(--blanco);
+}
+
+.contenido-plan{
+    margin: 3rem 20%;
+    width: 65%;
+    display: flex;
+    gap: 2rem;  
+}
+
+.pl{
+    position: relative;
+    width: 55%;
+    height: 20em;
+    background-color: var(--blanco);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pl::after{
+    position: absolute;
+    bottom: -1.5rem;
+    width: 80%;
+    height: 3rem;
+    content: "Select Plan";
+    background-color: var(--colorcaja);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pl span{
+    display: block;
+
+}
+
+.pl>span:nth-child(1), .pl>span:nth-child(2){
+    font-size: 2rem;
+    font-weight: 700px;
+    color: var(--precio);
+}
+
+.pl>span:nth-child(1){ 
+    margin-top: 1.5rem;
+}
+
+.pl>span:nth-child(n + 3){ 
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+hr{
+    width: 50%;
+    margin: .5rem 0 1rem;
+}
